@@ -3,15 +3,13 @@ from ft_filter import ft_filter
 
 
 def is_long_enough(n):
-    """Return a function checking if a string is at least n characters."""
     def checker(word):
-        """Check if word length is greater or equal to n."""
         return len(word) >= n
     return checker
 
 
 def main():
-    """Main function: filter words from a string by minimum length."""
+    """Main function"""
     try:
         assert len(sys.argv) == 3, "wrong number of arguments"
         text = sys.argv[1]
